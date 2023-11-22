@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset:section;
+        }
+        h1{
+            counter-reset:subsection;
+        }
+        
+        h1::before{
+            counter-increment:section;
+            content:"Section " counter(section)".";
+        }
+        h2::before{
+            counter-increment:subsection;
+            content:counter(section)"." counter(subsection);
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h2>Tags</h2>
+    <h2>Elements</h2>
+    <h2>Attributes</h2>
+
+    <h1>CSS</h1>
+    <h2>Colors</h2>
+    <h2>Font</h2>
+    <h2>Images</h2>
+    
+</body>
+</html>
