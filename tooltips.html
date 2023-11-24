@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            position: relative;    
+            display:inline-block;       
+
+        }
+        .tooltiptext{
+            position:absolute;
+            background-color: black;
+            color:white;
+            padding:5px;
+            border-radius: 3px;
+            visibility:hidden;   
+            left:110%;
+            top:10px;
+
+
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+
+        }
+        .tooltiptext::after{
+            content:" ";
+            border-width:5px;
+            border-style: solid;
+            border-color:transparent black transparent transparent;
+            position:absolute;
+            top:40%;
+            right:100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        <p>This will give a tooltip</p>
+        <span class="tooltiptext">Tooltip</span>
+    </div>
+    
+</body>
+</html>
