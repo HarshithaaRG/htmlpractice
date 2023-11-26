@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        header{
+            background-color: aqua;
+            padding:20px;        
+        }
+        nav{
+            background-color: black;
+            color:white;
+            display:flex;
+        }
+        nav a{
+            text-decoration: none;
+            display:block;
+            padding:10px;
+            color:white;
+        }
+        nav a:hover{
+            background-color:brown;
+        }
+        .row{
+            display:flex;
+        }
+        .about{
+            flex:30%;
+            background-color: blanchedalmond;
+            padding:20px;
+        }
+        .img{
+            background-color:gray;
+            width:100px;
+            height:100px;
+        }
+        footer{
+            background-color:aqua;
+            padding:20px;
+        }
+        .main{
+            padding:20px;
+        }
+        .main .img{
+            width:100%;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Heading</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="row">
+        <div class="about">
+            <h2>About Us</h2>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempore ab architecto amet natus officia excepturi eum placeat dolores modi.</p>
+            <div class="img">
+
+            </div>
+        </div>
+        <div class="main">
+            <h2>Main content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium doloremque voluptas minus adipisci sunt quo impedit perferendis numquam. Nihil!</p>
+            <div class="img">
+
+            </div>
+            <br>
+            <h3>Some text</h3>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque earum natus rerum sed quam omnis voluptatum animi quaerat, illo libero?</p>
+
+        </div>
+    </div>
+    <footer>
+        <h3 style="text-align: center;">&copy Website</h3>
+    </footer>
+
+    
+</body>
+</html>
